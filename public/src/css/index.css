@@ -27,7 +27,9 @@
   --faq: #878787;
   --whatsapp: #29a71a;
 }
-
+a {
+  text-decoration: none;
+}
 html {
   font-size: 62.5%;
   font-family: "Inter", serif;
@@ -48,7 +50,11 @@ nav img {
   visibility: hidden;
   position: absolute;
 }
-nav button {
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
   width: 140px;
   height: 47px;
   border-radius: 50px;
@@ -57,6 +63,7 @@ nav button {
   font-weight: 600;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+  align-self: center;
 }
 .landing-section {
   width: 100%;
@@ -68,7 +75,7 @@ nav button {
 h1 {
   color: white;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 20vh;
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
@@ -267,7 +274,7 @@ h1 {
 }
 
 .contact-box h4:nth-child(1) {
-  width: 150px;
+  width: 170px;
   text-align: center;
   border-radius: 5px;
   font-weight: 400;
@@ -279,7 +286,7 @@ h1 {
   padding: 10px;
 }
 .contact-box h4 {
-  width: 270px;
+  width: 290px;
   text-align: center;
   border-radius: 5px;
   font-weight: 400;
@@ -290,17 +297,19 @@ h1 {
   color: var(--green-box);
   padding: 10px;
 }
-.contact-box button {
+.btn-wasap {
   width: 270px;
+  display: flex;
   text-align: center;
-
+  justify-content: center;
   font-weight: 400;
-  margin: 10px;
-  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-left: calc(50% - 135px);
+  font-size: 1.9rem;
   height: auto;
   background-color: var(--whatsapp);
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 10px;
+  padding: 12px;
 }

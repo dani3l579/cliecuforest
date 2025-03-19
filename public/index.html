@@ -22,13 +22,27 @@
         <a href="index.html">Tours</a>
         <a href="index.html">Contactos</a>
       </div>
-      <button>Reservar</button>
+      <a href="https://wa.me/593992453304" class="nav-btn"> Reservar </a>
     </nav>
     <main>
       <section class="landing-section">
         <h1>CONOCE LA MAJESTUOSIDAD LA MAJESTUOSIDAD DE LA SELVA</h1>
         <div class="landing-cards--cont">
           <span> Desliza</span>
+          <card-component
+            title="Tena"
+            dias="Full Day"
+            incluido="Transporte"
+            image="./src/assets/landing-tena.jpg"
+          >
+          </card-component>
+          <card-component
+            title="Archidona"
+            dias="Full Day"
+            incluido="Transporte"
+            image="./src/assets/archi/archi1.jpg"
+          >
+          </card-component>
           <card-component
             title="Cuyabeno"
             dias="4 Días"
@@ -44,19 +58,56 @@
             image="./src/assets/landing-yasuni.jpg"
           >
           </card-component>
-
-          <card-component
-            title="Tena"
-            dias="Full Day"
-            incluido="Transporte"
-            image="./src/assets/landing-tena.jpg"
-          >
-          </card-component>
         </div>
       </section>
       <section class="tours-section">
         <h2>TOURS</h2>
         <div class="tours-cards--container">
+          <tour-component
+            images="./src/assets/tena/tena1.jpg, ./src/assets/tena/tena2.jpg, ./src/assets/tena/tena3.jpg, ./src/assets/tena/tena4.jpg, ./src/assets/tena/tena5.jpg, ./src/assets/tena/tena6.jpg, ./src/assets/tena/tena7.jpg, ./src/assets/tena/tena8.jpg, ./src/assets/tena/tena9.jpg"
+            title="Tena"
+            total-dias="Full Day"
+            transporte-box="Transporte"
+            bck-trans="var(--turquesa)"
+            alimentos-box="Alimentos"
+            bckAlimentos="var(--main-btn)"
+          >
+            <dias-component
+              dias="Actividades:"
+              p="Caminatas guiadas por la selva tropical, entubación fluvial, paseos en canoa"
+            ></dias-component>
+            <dias-component
+              dias="Actividades:"
+              p="Encuentros con vida silvestre, museos y visitas a comunidades indígenas"
+            ></dias-component>
+            <dias-component
+              dias="Actividades:"
+              p="La Ruta del Chocolate para aprender el cultivo del cacao."
+            ></dias-component>
+          </tour-component>
+
+          <tour-component
+            images="./src/assets/archi/archi1.jpg, ./src/assets/archi/archi2.jpg, ./src/assets/archi/archi3.jpg, ./src/assets/archi/archi4.jpg, ./src/assets/archi/archi5.jpg, ./src/assets/archi/archi6.jpg"
+            title="Archidona"
+            total-dias="Full Day"
+            transporte-box="Transporte"
+            bck-trans="var(--turquesa)"
+            alimentos-box="Alimentos"
+            bckAlimentos="var(--main-btn)"
+          >
+            <dias-component
+              dias="Actividades:"
+              p="Cavernas de Jumandy, Visita al Zoo el Arca, visita de cascadas"
+            ></dias-component>
+            <dias-component
+              dias="Recorridos:"
+              p=" Visita a Wiñak fabrica de chocolate, Centro de Archidona e Iglesias"
+            ></dias-component>
+            <dias-component
+              dias="Aventura"
+              p="Rafting, tubing, visita de cascadas Islom, Yanayacu"
+            ></dias-component>
+          </tour-component>
           <tour-component
             images="./src/assets/cuyabeno/cuyabeno1.jpg, ./src/assets/cuyabeno/cuyabeno2.jpg, ./src/assets/cuyabeno/cuyabeno3.jpg, ./src/assets/cuyabeno/cuyabeno4.jpg, ./src/assets/cuyabeno/cuyabeno5.jpg, ./src/assets/cuyabeno/cuyabeno6.jpg, ./src/assets/cuyabeno/cuyabeno7.jpg"
             title="CUYABENO"
@@ -120,52 +171,6 @@
             <dias-component
               dias="Dia 4:"
               p="Desayuno y regreso en canoa"
-            ></dias-component>
-          </tour-component>
-
-          <tour-component
-            images="./src/assets/tena/tena1.jpg, ./src/assets/tena/tena2.jpg, ./src/assets/tena/tena3.jpg, ./src/assets/tena/tena4.jpg, ./src/assets/tena/tena5.jpg, ./src/assets/tena/tena6.jpg, ./src/assets/tena/tena7.jpg, ./src/assets/tena/tena8.jpg, ./src/assets/tena/tena9.jpg"
-            title="Tena"
-            total-dias="Full Day"
-            transporte-box="Transporte"
-            bck-trans="var(--turquesa)"
-            alimentos-box="Alimentos"
-            bckAlimentos="var(--main-btn)"
-          >
-            <dias-component
-              dias="Actividades:"
-              p="Caminatas guiadas por la selva tropical, entubación fluvial, paseos en canoa"
-            ></dias-component>
-            <dias-component
-              dias="Actividades:"
-              p="Encuentros con vida silvestre, museos y visitas a comunidades indígenas"
-            ></dias-component>
-            <dias-component
-              dias="Actividades:"
-              p="La Ruta del Chocolate para aprender el cultivo del cacao."
-            ></dias-component>
-          </tour-component>
-
-          <tour-component
-            images="./src/assets/archi/archi1.jpg, ./src/assets/archi/archi2.jpg, ./src/assets/archi/archi3.jpg, ./src/assets/archi/archi4.jpg, ./src/assets/archi/archi5.jpg, ./src/assets/archi/archi6.jpg"
-            title="Archidona"
-            total-dias="Full Day"
-            transporte-box="Transporte"
-            bck-trans="var(--turquesa)"
-            alimentos-box="Alimentos"
-            bckAlimentos="var(--main-btn)"
-          >
-            <dias-component
-              dias="Actividades:"
-              p="Cavernas de Jumandy, Visita al Zoo el Arca, visita de cascadas"
-            ></dias-component>
-            <dias-component
-              dias="Recorridos:"
-              p=" Visita a Wiñak fabrica de chocolate, Centro de Archidona e Iglesias"
-            ></dias-component>
-            <dias-component
-              dias="Aventura"
-              p="Rafting, tubing, visita de cascadas Islom, Yanayacu"
             ></dias-component>
           </tour-component>
         </div>
@@ -264,7 +269,7 @@
             <h4>Celular: 0992453304</h4>
             <h4>faustinhogarcia_10@hotmail.com</h4>
             <h4>Tena - Ecuador</h4>
-            <button>Whatsapp</button>
+            <a class="btn-wasap" href="https://wa.me/593992453304">Whatsapp</a>
           </div>
         </div>
       </section>

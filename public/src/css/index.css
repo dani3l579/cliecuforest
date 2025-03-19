@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akira";
+  src: url("../fonts/AkiraExpanded-SuperBold.woff") format("woff2"),
+    url("../assets/fonts/AkiraExpanded-SuperBold.woff.html") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-btn: #ffb400;
+  --h3-title: #666565;
+  --green-box: #2c5f2d;
+  --turquesa: #2e86ab;
+  --coffe: #8c4a2f;
+  --faq: #878787;
+  --whatsapp: #29a71a;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", serif;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 6% 2% 0 6%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+}
+.desk-menu {
+  visibility: hidden;
+  position: absolute;
+}
+nav button {
+  width: 140px;
+  height: 47px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--main-btn);
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/landing-tiger.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 15vh;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.landing-cards--cont {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 40px;
+  gap: 20px;
+  padding-left: 30px;
+  align-items: center;
+}
+.landing-cards--cont::-webkit-scrollbar {
+  visibility: hidden;
+}
+.landing-cards--cont span {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.544);
+}
+/* TOURS SECTION */
+.tours-section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background-image: url(../assets/tours-section.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.tours-section h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-left: 10%;
+  padding-top: 3vh;
+}
+/* TOURS SECTION */
+.tours-cards--container {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: start;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.tours-cards--container::-webkit-scrollbar {
+  visibility: hidden;
+}
+.tours-card {
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  margin: 30px auto;
+}
+
+.tours-h3--title {
+  font-family: "Akira", sans-serif;
+  font-size: 1.8rem;
+  color: var(--h3-title);
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.includes-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tours-desliza {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0px 0px 6px black;
+  transition: transform 0.5s ease-in-out;
+  animation: moverFlecha 1s infinite alternate;
+}
+@keyframes moverFlecha {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+/* lugares section */
+.destinos-section {
+  height: auto;
+  padding-bottom: 40px;
+  background-image: url(../assets/papagayo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.destinos-section h2 {
+  color: var(--green-box);
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  padding-top: 3vh;
+}
+.lugares-carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+.lugares-carousel::-webkit-scrollbar {
+  visibility: hidden;
+}
+.destinos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-tour--propio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background-color: var(--green-box);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+/* ESPECIALES */
+.especiales-section {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  background: linear-gradient(45deg, var(--turquesa), white);
+}
+.especiales-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.especiales-section h2 {
+  color: var(--coffe);
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  padding-top: 5vh;
+}
+.faq-section {
+}
+.faq-section h2 {
+  color: var(--faq);
+  font-size: 2rem;
+  font-weight: 400;
+  border: 0.5px solid rgb(184, 184, 184);
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+}
+.faq-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contact-section {
+  padding: 30px 0 100px 0;
+  background-image: url(../assets/landing-tiger.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-section h2 {
+  color: var(--faq);
+  font-size: 2rem;
+  font-weight: 400;
+  border: 0.5px solid rgb(184, 184, 184);
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+}
+.contact-box {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.079);
+  padding: 20px 0;
+}
+
+.contact-box h4:nth-child(1) {
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 400;
+  margin: 10px;
+  font-size: 1.8rem;
+  height: auto;
+  background-color: var(--green-box);
+  color: white;
+  padding: 10px;
+}
+.contact-box h4 {
+  width: 270px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 400;
+  margin: 10px;
+  font-size: 1.8rem;
+  height: auto;
+  background-color: white;
+  color: var(--green-box);
+  padding: 10px;
+}
+.contact-box button {
+  width: 270px;
+  text-align: center;
+
+  font-weight: 400;
+  margin: 10px;
+  font-size: 1.8rem;
+  height: auto;
+  background-color: var(--whatsapp);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,55 @@
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.desk-menu {
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  right: 30vw;
+  top: 30px;
+}
+.desk-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  margin-left: 40px;
+  font-weight: bold;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+}
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/landing-tiger.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  color: white;
+  text-align: left;
+  padding-top: 0vh;
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  width: 40%;
+}
+.landing-cards--cont {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+  padding-left: 500px;
+  justify-content: center;
+  align-items: center;
+}

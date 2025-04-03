@@ -57,6 +57,15 @@ class TourComponent extends HTMLElement {
     height: 100%;
     object-fit: cover;
   }
+    .swiper-pagination-bullet {
+    background-color: white !important; /* Cambia el color */
+    width: 12px; /* Ajusta el tamaño */
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffb400 !important; /* Cambia el color del bullet activo */
+}
   .tours-h3--title {
     font-family: "Akira", sans-serif;
     font-size: 1.8rem;

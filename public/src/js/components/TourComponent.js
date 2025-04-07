@@ -141,7 +141,10 @@ class TourComponent extends HTMLElement {
     margin-top: 12px;
   }
   .tours-btn--itinerario {
+  width:75%;
+  text-decoration:none;
     display: flex;
+    justify-content:center;
     padding: 15px;
     background-color: var(--green-box);
     color: white;
@@ -171,7 +174,8 @@ class TourComponent extends HTMLElement {
               <div class="dias-cont">
                 <slot></slot>
               </div>
-              <button class="tours-btn--itinerario">DESCARGAR ITINERARIO</button>
+              <a class="tours-btn--itinerario" href="https://wa.me/593992453304?text=Hola%2C%20estoy%20interesado%20en%20uno%20de%20los%20tours" target="_blank" >Consultar</a>
+
             </div>
           `;
     setTimeout(() => {
